@@ -3,6 +3,8 @@ sphinx-pdf
 
 My Docker image for generate PDF and HTML by [Sphinx](https://www.sphinx-doc.org)
 
+[![Docker Hub](http://dockeri.co/image/macrat/sphinx-pdf)](https://hub.docker.com/r/macrat/sphinx-pdf)
+
 
 ## How to Use
 

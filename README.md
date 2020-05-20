@@ -17,7 +17,7 @@ $ docker pull macrat/sphinx-pdf
 ### 2. Make project
 
 ``` shell
-$ docker run --rm -itv `pwd`:/docs sphinx-pdf sphinx-quickstart
+$ docker run --rm -itv `pwd`:/docs macrat/sphinx-pdf sphinx-quickstart
 $ ls
 Makefile  _build  _static  _templates  conf.py  index.rst  make.bat
 ```
@@ -25,7 +25,7 @@ Makefile  _build  _static  _templates  conf.py  index.rst  make.bat
 ### 3. Build project
 
 ``` shell
-$ docker run --rm -v `pwd`:/docs sphinx-pdf
+$ docker run --rm -v `pwd`:/docs macrat/sphinx-pdf
 ```
 
 In default, build PDF to `./_build/latex/` and build HTML to `./_build/html/`.
@@ -33,7 +33,7 @@ In default, build PDF to `./_build/latex/` and build HTML to `./_build/html/`.
 ### 3: Alternate. Build only PDF
 
 ``` shell
-$ docker run --rm -v `pwd`:/docs sphinx-pdf make latexpdf
+$ docker run --rm -v `pwd`:/docs macrat/sphinx-pdf make latexpdf
 ```
 
 Then you can see PDF in `./_build/latex/` directory.

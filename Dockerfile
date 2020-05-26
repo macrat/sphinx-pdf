@@ -2,7 +2,9 @@ FROM alpine:latest
 
 RUN apk --no-cache add \
     py3-sphinx \
-    texlive-full
+    texlive-full \
+ && pip3 install \
+    sphinxcontrib-blockdiag
 
 RUN mkdir /docs && chown 1000:1000 /docs
 
